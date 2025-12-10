@@ -1,6 +1,9 @@
 export function Hero() {
   return (
-    <section className="bg-gradient-to-b from-probemas-bg to-probemas-bgSoft pb-16 pt-12">
+    <section
+      id="hero"
+      className="bg-gradient-to-b from-probemas-bg to-probemas-bgSoft pb-16 pt-12"
+    >
       <div className="page-container grid gap-10 md:grid-cols-2 md:items-center">
         <div className="space-y-6">
           <p className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.15em] text-probemas-muted">

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { navLinks } from "@/lib/content";
 
@@ -10,15 +11,16 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-30 border-b border-white/5 bg-probemas-bg/80 backdrop-blur">
       <div className="page-container flex h-16 items-center justify-between">
-        <div className="flex items-center gap-3">
-          <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-probemas-primary to-probemas-accent text-black flex items-center justify-center font-black shadow-soft">
-            P
-          </div>
-          <div className="flex flex-col leading-tight">
-            <span className="font-semibold">Probemas</span>
-            <span className="text-xs text-probemas-muted">OSRS Services</span>
-          </div>
-        </div>
+        <Link href="#hero" className="flex items-center">
+          <Image
+            src="/logos/probemas.svg"
+            alt="Probemas"
+            width={150}
+            height={40}
+            className="h-10 w-auto object-contain"
+            priority
+          />
+        </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
