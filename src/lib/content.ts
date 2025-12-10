@@ -11,32 +11,32 @@ export const features = [
     icon: "⚡",
     title: "Fast Services",
     description:
-      "Our efficient team delivers your orders quickly so you can keep playing.",
+      "Our efficient services ensure you achieve your goals promptly.",
   },
   {
     icon: "🛡️",
-    title: "Trusted & Secure",
-    description: "Verified pros with strict safety and privacy standards.",
+    title: "Safety Guarantee",
+    description: "Your account's security and safety are our top priorities.",
   },
   {
-    icon: "🎯",
-    title: "Tailored Plans",
-    description: "Custom routes designed for your goals and play style.",
+    icon: "⏱️",
+    title: "Daily Updates",
+    description: "Daily progress reports help you keep up with your service status.",
   },
   {
-    icon: "🤝",
+    icon: "🔐",
+    title: "VPN Encryption",
+    description: "Your account remains safe with our advance VPN system.",
+  },
+  {
+    icon: "🖥️",
+    title: "Real-Time Screenshots",
+    description: "Watch your screen whilst we are completing your order.",
+  },
+  {
+    icon: "📞",
     title: "24/7 Support",
-    description: "Live chat and Discord support whenever you need help.",
-  },
-  {
-    icon: "📈",
-    title: "Progress Tracking",
-    description: "Transparent updates so you always know what’s done.",
-  },
-  {
-    icon: "💎",
-    title: "Loyalty Rewards",
-    description: "Earn perks and discounts for returning orders.",
+    description: "Rely on our professional support team 24/7.",
   },
 ];
 
@@ -44,6 +44,7 @@ export const servicesCategories = [
   {
     id: "skilling",
     label: "Skilling",
+    icon: "/icons/skilling.png",
     description:
       "Enhance your character’s skills with our Skilling Services. Our experienced trainers help you reach your desired levels quickly.",
     gallery: ["/images/skilling-1.png", "/images/skilling-2.png", "/images/skilling-3.png"],
@@ -51,6 +52,7 @@ export const servicesCategories = [
   {
     id: "questing",
     label: "Questing",
+    icon: "/icons/questing.png",
     description:
       "Get key quests completed fast. We handle requirements, routing, and checkpoints.",
     gallery: ["/images/questing-1.png", "/images/questing-2.png", "/images/questing-3.png"],
@@ -58,6 +60,7 @@ export const servicesCategories = [
   {
     id: "diaries",
     label: "Diaries",
+    icon: "/icons/diaries.png",
     description:
       "Achievement diaries finished efficiently for teleports, XP lamps, and perks.",
     gallery: ["/images/diaries-1.png", "/images/diaries-2.png", "/images/diaries-3.png"],
@@ -65,6 +68,7 @@ export const servicesCategories = [
   {
     id: "minigames",
     label: "Minigames",
+    icon: "/icons/minigames.png",
     description:
       "Minigame grinds done for you—void, torso, defenders, and more.",
     gallery: ["/images/minigames-1.png", "/images/minigames-2.png", "/images/minigames-3.png"],
@@ -72,6 +76,7 @@ export const servicesCategories = [
   {
     id: "pvm",
     label: "PVM & Bossing",
+    icon: "/icons/bossing.png",
     description:
       "Boss carries, KC padding, and rare hunt support with expert runners.",
     gallery: ["/images/pvm-1.png", "/images/pvm-2.png", "/images/pvm-3.png"],
@@ -79,6 +84,7 @@ export const servicesCategories = [
   {
     id: "infernal",
     label: "Infernal & Firecapes",
+    icon: "/icons/firecapes.png",
     description:
       "High-success Infernal and Firecape services from vetted specialists.",
     gallery: ["/images/infernal-1.png", "/images/infernal-2.png", "/images/infernal-3.png"],
@@ -86,6 +92,7 @@ export const servicesCategories = [
   {
     id: "raids",
     label: "Raids",
+    icon: "/icons/raids.png",
     description:
       "TOA, TOB, COX clears and coaching. Speedruns or unlocks, we’ve got you.",
     gallery: ["/images/raids-1.png", "/images/raids-2.png", "/images/raids-3.png"],
@@ -93,6 +100,7 @@ export const servicesCategories = [
   {
     id: "ironman",
     label: "Ironman",
+    icon: "/icons/ironmen.png",
     description:
       "Ironman-friendly services respecting mode constraints and safety.",
     gallery: ["/images/ironman-1.png", "/images/ironman-2.png", "/images/ironman-3.png"],

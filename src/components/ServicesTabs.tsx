@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { servicesCategories } from "@/lib/content";
 import { SectionHeading } from "./SectionHeading";
@@ -23,13 +24,24 @@ export function ServicesTabs() {
                 <button
                   key={category.id}
                   onClick={() => setActiveId(category.id)}
-                  className={`flex-1 whitespace-nowrap px-4 py-3 text-left text-sm font-medium transition hover:bg-white/5 lg:flex-none ${
+                  className={`flex flex-1 items-center gap-3 whitespace-nowrap px-4 py-3 text-left text-sm font-medium transition hover:bg-white/5 lg:flex-none ${
                     isActive
                       ? "bg-probemas-primary text-black lg:rounded-xl"
                       : "text-probemas-muted"
                   }`}
                 >
-                  {category.label}
+                  {category.icon ? (
+                    <span className="relative h-6 w-6 overflow-hidden rounded-full bg-white/10">
+                      <Image
+                        src={category.icon}
+                        alt={category.label}
+                        fill
+                        sizes="32px"
+                        className="object-contain"
+                      />
+                    </span>
+                  ) : null}
+                  <span>{category.label}</span>
                 </button>
               );
             })}

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Hero() {
   return (
     <section
@@ -10,7 +12,7 @@ export function Hero() {
             Probemas Services
           </p>
           <div className="space-y-4">
-            <h1 className="text-4xl font-bold leading-tight md:text-5xl">
+            <h1 className="text-4xl font-bold leading-tight text-probemas-text md:text-5xl">
               Maximize Your OSRS Experience
             </h1>
             <p className="text-lg text-probemas-muted">
@@ -50,16 +52,15 @@ export function Hero() {
         </div>
 
         <div className="relative">
-          <div className="aspect-video overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-probemas-bgSoft via-probemas-bg to-probemas-bgSoft shadow-soft">
-            <div className="absolute inset-0 bg-gradient-to-br from-probemas-primary/10 via-transparent to-probemas-accent/10 blur-3xl" />
-            <div className="relative flex h-full items-center justify-center">
-              <div className="rounded-xl border border-dashed border-probemas-primary/50 bg-white/5 px-6 py-4 text-center">
-                <p className="text-sm uppercase tracking-[0.2em] text-probemas-muted">
-                  OSRS Artwork Placeholder
-                </p>
-                <p className="mt-2 text-lg font-semibold">Replace with hero art from Figma</p>
-              </div>
-            </div>
+          <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-white/10 bg-probemas-bgSoft shadow-soft">
+            <Image
+              src="/hero.png"
+              alt="OSRS heroes artwork"
+              fill
+              priority
+              className="object-cover"
+              sizes="(min-width: 1024px) 560px, 100vw"
+            />
           </div>
         </div>
       </div>
