@@ -1,0 +1,89 @@
+"use client";
+
+import Link from "next/link";
+import { useState } from "react";
+import { navLinks } from "@/lib/content";
+
+export function Navbar() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <header className="sticky top-0 z-30 border-b border-white/5 bg-probemas-bg/80 backdrop-blur">
+      <div className="page-container flex h-16 items-center justify-between">
+        <div className="flex items-center gap-3">
+          <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-probemas-primary to-probemas-accent text-black flex items-center justify-center font-black shadow-soft">
+            P
+          </div>
+          <div className="flex flex-col leading-tight">
+            <span className="font-semibold">Probemas</span>
+            <span className="text-xs text-probemas-muted">OSRS Services</span>
+          </div>
+        </div>
+
+        <nav className="hidden items-center gap-8 md:flex">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="text-sm text-probemas-muted transition hover:text-probemas-text"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="hidden items-center gap-3 md:flex">
+          <select className="rounded-lg border border-white/10 bg-probemas-bgSoft px-3 py-2 text-sm text-probemas-text focus:outline-none focus:ring-2 focus:ring-probemas-primary/70">
+            <option>USD</option>
+            <option>EUR</option>
+            <option>GBP</option>
+          </select>
+          <button className="rounded-lg bg-probemas-primary px-4 py-2 text-sm font-semibold text-black transition hover:shadow-soft">
+            Sign In
+          </button>
+        </div>
+
+        <button
+          className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-probemas-bgSoft text-probemas-text"
+          onClick={() => setOpen((v) => !v)}
+          aria-label="Toggle navigation"
+        >
+          <span className="sr-only">Open menu</span>
+          <div className="flex flex-col gap-1.5">
+            <span className="block h-0.5 w-5 bg-probemas-text" />
+            <span className="block h-0.5 w-5 bg-probemas-text" />
+            <span className="block h-0.5 w-5 bg-probemas-text" />
+          </div>
+        </button>
+      </div>
+
+      {open ? (
+        <div className="md:hidden border-t border-white/5 bg-probemas-bgSoft">
+          <div className="page-container flex flex-col gap-4 py-4">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-sm text-probemas-text"
+                onClick={() => setOpen(false)}
+              >
+                {link.label}
+              </Link>
+            ))}
+            <div className="flex items-center gap-3">
+              <select className="flex-1 rounded-lg border border-white/10 bg-probemas-bg px-3 py-2 text-sm text-probemas-text focus:outline-none focus:ring-2 focus:ring-probemas-primary/70">
+                <option>USD</option>
+                <option>EUR</option>
+                <option>GBP</option>
+              </select>
+              <button className="rounded-lg bg-probemas-primary px-4 py-2 text-sm font-semibold text-black transition hover:shadow-soft">
+                Sign In
+              </button>
+            </div>
+          </div>
+        </div>
+      ) : null}
+    </header>
+  );
+}
+
