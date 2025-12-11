@@ -28,7 +28,6 @@ export function PaymentMethods() {
     <section className="py-16">
       <div className="page-container space-y-8">
         <SectionHeading title="Payment Methods" />
-        <div className="h-1 w-16 rounded-full bg-probemas-primary" />
         <div className="grid gap-3 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-8">
           {paymentMethods.map((method) => {
             const style = brandStyles[method.name] ?? { bg: "rgba(255,255,255,0.04)" };
