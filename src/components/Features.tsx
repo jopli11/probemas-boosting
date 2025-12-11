@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import { features } from "@/lib/content";
 import { SectionHeading } from "./SectionHeading";
 
