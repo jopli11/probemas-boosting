@@ -34,17 +34,6 @@ export function Navbar() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 md:flex">
-          <select className="rounded-lg border border-white/10 bg-probemas-bgSoft px-3 py-2 text-sm text-probemas-text focus:outline-none focus:ring-2 focus:ring-probemas-primary/70">
-            <option>USD</option>
-            <option>EUR</option>
-            <option>GBP</option>
-          </select>
-          <button className="rounded-lg bg-probemas-primary px-4 py-2 text-sm font-semibold text-black transition hover:shadow-soft">
-            Sign In
-          </button>
-        </div>
-
         <button
           className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-probemas-bgSoft text-probemas-text"
           onClick={() => setOpen((v) => !v)}
@@ -72,16 +61,6 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <div className="flex items-center gap-3">
-              <select className="flex-1 rounded-lg border border-white/10 bg-probemas-bg px-3 py-2 text-sm text-probemas-text focus:outline-none focus:ring-2 focus:ring-probemas-primary/70">
-                <option>USD</option>
-                <option>EUR</option>
-                <option>GBP</option>
-              </select>
-              <button className="rounded-lg bg-probemas-primary px-4 py-2 text-sm font-semibold text-black transition hover:shadow-soft">
-                Sign In
-              </button>
-            </div>
           </div>
         </div>
       ) : null}

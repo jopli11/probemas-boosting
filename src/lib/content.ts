@@ -47,7 +47,11 @@ export const servicesCategories = [
     icon: "/icons/skilling.png",
     description:
       "Enhance your character’s skills with our Skilling Services. Our experienced trainers help you reach your desired levels quickly.",
-    gallery: ["/images/skilling-1.png", "/images/skilling-2.png", "/images/skilling-3.png"],
+    gallery: [
+      "/images/skilling/images.jpg",
+      "/images/skilling/download (1).jpg",
+      "/images/skilling/download (2).jpg",
+    ],
   },
   {
     id: "questing",
@@ -55,7 +59,7 @@ export const servicesCategories = [
     icon: "/icons/questing.png",
     description:
       "Get key quests completed fast. We handle requirements, routing, and checkpoints.",
-    gallery: ["/images/questing-1.png", "/images/questing-2.png", "/images/questing-3.png"],
+    gallery: ["/images/questing/quest1.jpg", "/images/questing/quest2.jpg", "/images/questing/quest3.jpg"],
   },
   {
     id: "diaries",
@@ -63,7 +67,7 @@ export const servicesCategories = [
     icon: "/icons/diaries.png",
     description:
       "Achievement diaries finished efficiently for teleports, XP lamps, and perks.",
-    gallery: ["/images/diaries-1.png", "/images/diaries-2.png", "/images/diaries-3.png"],
+    gallery: ["/images/diaries/diaries1.jpg", "/images/diaries/diaries2.jpg", "/images/diaries/diaries3.jpg"],
   },
   {
     id: "minigames",
@@ -71,7 +75,7 @@ export const servicesCategories = [
     icon: "/icons/minigames.png",
     description:
       "Minigame grinds done for you—void, torso, defenders, and more.",
-    gallery: ["/images/minigames-1.png", "/images/minigames-2.png", "/images/minigames-3.png"],
+    gallery: ["/images/minigames/mini1.jpg", "/images/minigames/mini2.jpg", "/images/minigames/mini3.jpg"],
   },
   {
     id: "pvm",
@@ -79,7 +83,7 @@ export const servicesCategories = [
     icon: "/icons/bossing.png",
     description:
       "Boss carries, KC padding, and rare hunt support with expert runners.",
-    gallery: ["/images/pvm-1.png", "/images/pvm-2.png", "/images/pvm-3.png"],
+    gallery: ["/images/bossing/boss1.jpg", "/images/bossing/boss2.jpg", "/images/bossing/boss3.jpg"],
   },
   {
     id: "infernal",
@@ -87,7 +91,7 @@ export const servicesCategories = [
     icon: "/icons/firecapes.png",
     description:
       "High-success Infernal and Firecape services from vetted specialists.",
-    gallery: ["/images/infernal-1.png", "/images/infernal-2.png", "/images/infernal-3.png"],
+    gallery: ["/images/firecapes/firecape1.jpg", "/images/firecapes/firecape2.jpg", "/images/firecapes/firecape3.jpg"],
   },
   {
     id: "raids",
@@ -95,7 +99,7 @@ export const servicesCategories = [
     icon: "/icons/raids.png",
     description:
       "TOA, TOB, COX clears and coaching. Speedruns or unlocks, we’ve got you.",
-    gallery: ["/images/raids-1.png", "/images/raids-2.png", "/images/raids-3.png"],
+    gallery: ["/images/raids/cox.jpg", "/images/raids/tob.jpg", "/images/raids/toa.jpg"],
   },
   {
     id: "ironman",
@@ -103,7 +107,7 @@ export const servicesCategories = [
     icon: "/icons/ironmen.png",
     description:
       "Ironman-friendly services respecting mode constraints and safety.",
-    gallery: ["/images/ironman-1.png", "/images/ironman-2.png", "/images/ironman-3.png"],
+    gallery: ["/images/ironman/iron1.jpg", "/images/ironman/iron2.jpg", "/images/ironman/iron3.jpg"],
   },
 ];
 
@@ -145,18 +149,45 @@ export const steps = [
 ];
 
 export const faqs = [
-  { question: "How much RS Gold can I buy?", answer: "We support small to bulk orders. For very large requests, contact support for best pricing and availability." },
-  { question: "How do I track my order?", answer: "Join Discord and your ticket channel will show progress updates, ETA, and completion confirmations." },
-  { question: "Is this safe for my account?", answer: "We use vetted runners, VPN/proxy when needed, and follow strict safety protocols. You’re always in control." },
-  { question: "Can you work with Ironman accounts?", answer: "Yes. We respect mode constraints and will confirm rules before starting the service." },
+  {
+    question: "How much RS Gold can I buy?",
+    answer:
+      "We support small to bulk orders. For very large requests, contact support for best pricing and availability.",
+  },
+  {
+    question: "What currencies do you accept?",
+    answer: "We accept major global currencies. Speak with support for region-specific options.",
+  },
+  {
+    question: "Do I need to show you my ID?",
+    answer: "Typically no. In rare fraud-prevention cases we may request light verification.",
+  },
+  {
+    question: "Is Probemas Legit?",
+    answer: "Yes—trusted by thousands of players. We operate transparently with secure payment options.",
+  },
+  {
+    question: "Can I buy items instead of gold?",
+    answer: "Yes, we can source items directly. Open a ticket with your item list for pricing.",
+  },
+  {
+    question: "Can I also sell Gold here?",
+    answer: "Yes. Open a ticket to confirm rates and delivery method before selling.",
+  },
 ];
 
 export const paymentMethods = [
-  { name: "Visa", logo: "/logos/visa.svg" },
-  { name: "Mastercard", logo: "/logos/mastercard.svg" },
-  { name: "American Express", logo: "/logos/amex.svg" },
-  { name: "Discover", logo: "/logos/discover.svg" },
-  { name: "PayPal", logo: "/logos/paypal.svg" },
-  { name: "Crypto", logo: "/logos/crypto.svg" },
+  { name: "Visa", logo: "/logos/payments/visa.svg" },
+  { name: "Mastercard", logo: "/logos/payments/mastercard.svg" },
+  { name: "Google Pay", logo: "/logos/payments/googlepay.svg" },
+  { name: "Apple Pay", logo: "/logos/payments/applepay.svg" },
+  { name: "Skrill", logo: "/logos/payments/skrill.svg" },
+  { name: "Trustly", logo: "/logos/payments/trustly.svg" },
+  { name: "iDEAL", logo: "/logos/payments/ideal.svg" },
+  { name: "SEPA", logo: "/logos/payments/sepa.svg" },
+  { name: "Interac", logo: "/logos/payments/interac.svg" },
+  { name: "Zelle", logo: "/logos/payments/zelle.svg" },
+  { name: "paysafecard", logo: "/logos/payments/paysafecard.svg" },
+  { name: "Crypto", logo: "/logos/payments/crypto.svg" },
 ];
 

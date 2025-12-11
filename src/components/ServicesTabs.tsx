@@ -59,13 +59,19 @@ export function ServicesTabs() {
               {activeCategory?.gallery.map((img) => (
                 <div
                   key={img}
-                  className="min-w-[180px] flex-1 rounded-xl border border-white/10 bg-gradient-to-br from-probemas-bgSoft to-probemas-bg p-4 text-center text-sm text-probemas-muted"
+                  className="min-w-[200px] flex-1 rounded-xl border border-white/10 bg-gradient-to-br from-probemas-bgSoft to-probemas-bg p-4 text-center text-sm text-probemas-muted"
                 >
-                  <div className="mb-3 h-32 w-full rounded-lg bg-black/20" />
-                  <p className="truncate">{img}</p>
-                  <p className="text-xs text-probemas-muted/70">
-                    Replace with gallery art
-                  </p>
+                  <div className="relative mb-3 h-36 w-full overflow-hidden rounded-lg bg-black/20">
+                    <Image
+                      src={img}
+                      alt={`${activeCategory?.label ?? "Service"} preview`}
+                      fill
+                      sizes="(min-width: 1024px) 240px, 70vw"
+                      className="object-cover"
+                      priority
+                    />
+                  </div>
+                  <p className="text-xs text-probemas-muted/70">Service preview</p>
                 </div>
               ))}
             </div>

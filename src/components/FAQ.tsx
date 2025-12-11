@@ -18,22 +18,25 @@ export function FAQ() {
           title="Frequently Asked Questions"
           subtitle="Everything you need to know before ordering."
         />
-        <div className="grid gap-6 lg:grid-cols-[1fr,1.2fr]">
-          <div className="card-surface p-6">
-            <div className="flex h-full flex-col justify-between space-y-4">
-              <div>
-                <p className="text-sm uppercase tracking-[0.2em] text-probemas-muted">
-                  Earn Rewards
-                </p>
-                <h3 className="mt-2 text-2xl font-semibold">Loyalty Perks</h3>
-                <p className="mt-2 text-probemas-muted">
-                  Repeat orders unlock discounts and priority routing. Chat with support for details.
-                </p>
-              </div>
-              <div className="rounded-xl border border-dashed border-white/15 bg-white/5 p-4 text-probemas-muted">
-                Placeholder for rewards card / imagery
-              </div>
+        <div className="grid gap-10 items-start lg:grid-cols-[minmax(280px,340px),1fr]">
+          <div className="card-surface space-y-4 p-6">
+            <p className="text-sm uppercase tracking-[0.25em] text-probemas-muted">
+              Earn Rewards
+            </p>
+            <h3 className="text-2xl font-semibold">Every Time You Buy</h3>
+            <p className="text-probemas-muted">
+              Log in and start earning Loyalty Points for every purchase. Redeem them for value on future orders.
+            </p>
+            <div className="rounded-xl border border-dashed border-white/10 bg-white/5 px-4 py-3 text-sm text-probemas-text">
+              <span className="font-semibold text-probemas-primary">Purchase</span>
+              <span className="px-2 text-probemas-muted">››</span>
+              <span className="font-semibold text-probemas-primary">Earn Points</span>
+              <span className="px-2 text-probemas-muted">››</span>
+              <span className="font-semibold text-probemas-primary">Redeem</span>
             </div>
+            <button className="w-full rounded-xl bg-probemas-primary px-4 py-3 text-sm font-semibold text-black shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg">
+              See Rewards
+            </button>
           </div>
 
           <div className="space-y-3">

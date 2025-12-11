@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function DiscordSection() {
   return (
     <section className="py-16">
@@ -12,7 +14,7 @@ export function DiscordSection() {
             <p className="text-probemas-muted">
               Connect with staff, open tickets, and get real-time updates on your orders.
             </p>
-            <ul className="space-y-2 text-sm text-probemas-muted">
+            <ul className="space-y-2 text-sm text-probemas-primary">
               <li>• 24/7 live chat support</li>
               <li>• Dedicated ticket channels per order</li>
               <li>• Progress updates and media attachments</li>
@@ -29,14 +31,16 @@ export function DiscordSection() {
         </div>
 
         <div className="card-surface p-6">
-          <div className="flex h-full items-center justify-center rounded-xl border border-dashed border-white/15 bg-white/5 px-4 py-10 text-center">
-            <div>
-              <p className="text-sm uppercase tracking-[0.2em] text-probemas-muted">
-                Discord Widget Placeholder
-              </p>
-              <p className="mt-2 text-probemas-muted">
-                Swap this with the live widget or branded screenshot from Figma.
-              </p>
+          <div className="relative overflow-hidden rounded-xl border border-white/10 bg-probemas-bgSoft shadow-soft">
+            <div className="relative aspect-[16/9]">
+              <Image
+                src="/images/maxresdefault.jpg"
+                alt="Discord community preview"
+                fill
+                sizes="(min-width: 1024px) 560px, 100vw"
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
         </div>
