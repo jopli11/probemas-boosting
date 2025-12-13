@@ -21,13 +21,17 @@ export function Hero() {
           </div>
           <div className="flex flex-wrap items-center gap-4">
             <a
-              href="#how-it-works"
+              href="https://discord.gg/ts7mYuwJ"
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center justify-center rounded-xl bg-probemas-primary px-6 py-3 text-base font-semibold text-black shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg"
             >
               Get Started
             </a>
             <a
-              href="#services"
+              href="https://discord.gg/ts7mYuwJ"
+              target="_blank"
+              rel="noreferrer"
               className="text-probemas-muted underline-offset-4 hover:text-probemas-text hover:underline"
             >
               Explore services

@@ -20,7 +20,7 @@ export function DiscordSection() {
               <li>• Progress updates and media attachments</li>
             </ul>
             <a
-              href="https://discord.com/invite/"
+              href="https://discord.gg/ts7mYuwJ"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center rounded-xl bg-[#5865F2] px-5 py-3 text-sm font-semibold text-white shadow-soft transition hover:-translate-y-0.5"

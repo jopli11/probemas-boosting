@@ -21,7 +21,9 @@ export function VideoSection() {
         </div>
         <div>
           <a
-            href="#how-it-works"
+            href="https://discord.gg/ts7mYuwJ"
+            target="_blank"
+            rel="noreferrer"
             className="inline-flex items-center justify-center rounded-xl bg-probemas-primary px-6 py-3 text-sm font-semibold text-black shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg"
           >
             Get Started
