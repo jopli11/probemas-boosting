@@ -14,7 +14,7 @@ export function DiscordSection() {
             <p className="text-probemas-muted">
               Connect with staff, open tickets, and get real-time updates on your orders.
             </p>
-            <ul className="space-y-2 text-sm text-probemas-primary">
+            <ul className="space-y-2 text-sm text-white">
               <li>• 24/7 live chat support</li>
               <li>• Dedicated ticket channels per order</li>
               <li>• Progress updates and media attachments</li>
