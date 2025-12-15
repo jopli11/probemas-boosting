@@ -7,9 +7,18 @@ export function DiscordSection() {
         <div className="card-surface relative overflow-hidden p-6">
           <div className="absolute inset-0 bg-gradient-to-br from-[#5865F2]/20 to-probemas-primary/10" />
           <div className="relative space-y-4">
-            <p className="text-sm uppercase tracking-[0.2em] text-probemas-muted">
-              Discord
-            </p>
+            <div className="flex flex-wrap items-center gap-3">
+              <p className="text-sm uppercase tracking-[0.2em] text-probemas-muted">
+                Discord
+              </p>
+              <span className="inline-flex items-center gap-2 rounded-full bg-probemas-bg/80 px-3 py-1 text-xs font-semibold text-probemas-text shadow-soft ring-1 ring-white/10">
+                <span className="relative flex h-2.5 w-2.5">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400/60 opacity-75" />
+                  <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400" />
+                </span>
+                6,500+ members active
+              </span>
+            </div>
             <h3 className="text-2xl font-semibold">Join Our Discord Services Server</h3>
             <p className="text-probemas-muted">
               Connect with staff, open tickets, and get real-time updates on your orders.
