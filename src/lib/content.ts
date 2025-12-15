@@ -159,9 +159,24 @@ export const testimonials = [
 ];
 
 export const steps = [
-  { step: 1, title: "Join Our Discord", description: "Join the services server on Discord." },
-  { step: 2, title: "Open a Ticket", description: "Open a ticket for your desired service." },
-  { step: 3, title: "Order Services", description: "Make the payment and follow your order." },
+  {
+    step: 1,
+    title: "Join Our Discord",
+    description: "Join the services server on Discord.",
+    details: ["Tap “Open Ticket” to start", "You get a private channel with staff"],
+  },
+  {
+    step: 2,
+    title: "Open a Ticket",
+    description: "Tell us the service, goals, and timeline you need.",
+    details: ["We confirm price & ETA fast", "Ask anything—24/7 support"],
+  },
+  {
+    step: 3,
+    title: "Order Services",
+    description: "Pay securely and follow your order to completion.",
+    details: ["Track updates in your ticket", "See progress notes/screens when shared"],
+  },
 ];
 
 export const faqs = [

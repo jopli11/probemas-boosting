@@ -26,14 +26,23 @@ export function Steps() {
       <div className="page-container space-y-10">
         <SectionHeading
           title="Three Easy Steps"
-          subtitle="Join, open a ticket, and get your services started."
+          subtitle="Join, open a ticket, confirm price & ETA, then track progress."
         />
         <div className="grid gap-6 md:grid-cols-3">
           {steps.map((item) => (
-            <div key={item.step} className="card-surface p-6 space-y-3">
-              {stepIcons[item.step]}
+            <div key={item.step} className="card-surface flex h-full flex-col gap-3 p-6">
+              <div className="self-start">{stepIcons[item.step]}</div>
               <h3 className="text-lg font-semibold">{item.title}</h3>
-              <p className="text-sm text-probemas-muted">{item.description}</p>
+              <p className="text-sm text-probemas-muted leading-relaxed min-h-[48px]">
+                {item.description}
+              </p>
+              {item.details ? (
+                <ul className="space-y-1 text-xs text-probemas-muted/90 pt-1">
+                  {item.details.map((point) => (
+                    <li key={point}>• {point}</li>
+                  ))}
+                </ul>
+              ) : null}
             </div>
           ))}
         </div>
