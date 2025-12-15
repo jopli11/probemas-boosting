@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import { PaymentMethods } from "@/components/PaymentMethods";
+import { PromoBanner } from "@/components/PromoBanner";
 import { ServicesTabs } from "@/components/ServicesTabs";
 import { Steps } from "@/components/Steps";
 import { Testimonials } from "@/components/Testimonials";
@@ -14,6 +15,7 @@ export default function Home() {
   return (
     <div className="bg-probemas-bg text-probemas-text">
       <Navbar />
+      <PromoBanner />
       <main className="space-y-6">
         <Hero />
         <Features />

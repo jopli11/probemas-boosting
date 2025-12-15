@@ -6,6 +6,22 @@ export const navLinks = [
   { label: "FAQ", href: "#faq" },
 ];
 
+export const promotions = [
+  {
+    id: "agility-20",
+    label: "Limited time offer",
+    title: "20% off Agility to 99",
+    description:
+      "Full-service agility grind with daily progress updates and VPN-protected boosting.",
+    code: "AGILITY20",
+    discountLabel: "20% OFF",
+    expiresAt: "2025-01-05T23:59:00Z",
+    ctaLabel: "Book now",
+    ctaHref: "https://discord.gg/ts7mYuwJ",
+    active: true,
+  },
+];
+
 export const features = [
   {
     icon: "⚡",
