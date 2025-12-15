@@ -55,15 +55,16 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative">
-          <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-white/10 bg-probemas-bgSoft shadow-soft">
+        <div className="relative flex justify-center md:justify-end">
+          <div className="relative w-full max-w-2xl">
             <Image
-              src="/hero.png"
+              src="/images/ac53d81d-015f-4c9e-b843-4750cfef3d94_removalai_preview.png"
               alt="OSRS heroes artwork"
-              fill
+              width={900}
+              height={900}
               priority
-              className="object-cover"
-              sizes="(min-width: 1024px) 560px, 100vw"
+              className="w-full h-auto drop-shadow-[0_18px_40px_rgba(0,0,0,0.45)] md:-mb-8 select-none pointer-events-none"
+              sizes="(min-width: 1024px) 700px, 90vw"
             />
           </div>
         </div>
