@@ -20,21 +20,21 @@ export function FAQ() {
         />
         <div className="grid gap-10 items-start lg:grid-cols-[minmax(280px,340px),1fr]">
           <div className="card-surface space-y-4 p-6">
-            <p className="text-sm uppercase tracking-[0.25em] text-probemas-muted">
+            <p className="text-sm uppercase tracking-[0.25em] text-white/70">
               Earn Rewards
             </p>
-            <h3 className="text-2xl font-semibold">Every Time You Buy</h3>
-            <p className="text-probemas-muted">
+            <h3 className="text-h3-mobile font-bold font-raleway">Every Time You Buy</h3>
+            <p className="text-white/70">
               Log in and start earning Loyalty Points for every purchase. Redeem them for value on future orders.
             </p>
             <div className="rounded-xl border border-dashed border-white/10 bg-white/5 px-4 py-3 text-sm text-probemas-text">
-              <span className="font-semibold text-probemas-primary">Purchase</span>
-              <span className="px-2 text-probemas-muted">››</span>
-              <span className="font-semibold text-probemas-primary">Earn Points</span>
-              <span className="px-2 text-probemas-muted">››</span>
-              <span className="font-semibold text-probemas-primary">Redeem</span>
+              <span className="font-semibold text-secondary">Purchase</span>
+              <span className="px-2 text-white/70">››</span>
+              <span className="font-semibold text-secondary">Earn Points</span>
+              <span className="px-2 text-white/70">››</span>
+              <span className="font-semibold text-secondary">Redeem</span>
             </div>
-            <button className="w-full rounded-xl bg-probemas-primary px-4 py-3 text-sm font-semibold text-black shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg">
+            <button className="w-full rounded-xl bg-yellow px-4 py-3 text-sm font-bold text-black shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg font-chakra tracking-[-0.56px]">
               See Rewards
             </button>
           </div>
@@ -52,7 +52,7 @@ export function FAQ() {
                     <span className="text-lg">{open ? "–" : "+"}</span>
                   </button>
                   {open ? (
-                    <div className="border-t border-white/5 px-5 py-4 text-sm text-probemas-muted">
+                    <div className="border-t border-white/5 px-5 py-4 text-sm text-white/70">
                       {item.answer}
                     </div>
                   ) : null}

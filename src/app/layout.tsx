@@ -1,5 +1,5 @@
-import type { Metadata } from "next";
-import { Raleway } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Raleway, Chakra_Petch } from "next/font/google";
 import { faqs, servicesCategories } from "@/lib/content";
 import "./globals.css";
 
@@ -8,10 +8,20 @@ const raleway = Raleway({
   variable: "--font-raleway",
 });
 
+const chakraPetch = Chakra_Petch({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-chakra",
+});
+
 const siteUrl = "https://services.probemas.com";
 const title = "Probemas Services | Fast, Trusted OSRS Help";
 const description =
   "Maximize your Old School RuneScape experience with Probemas. Fast services, trusted reviews, secure payments, and real-time updates via Discord.";
+
+export const viewport: Viewport = {
+  themeColor: "#0F1729",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -71,7 +81,6 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
-  themeColor: "#050915",
 };
 
 export default function RootLayout({
@@ -81,7 +90,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${raleway.variable} font-sans antialiased`}>
+      <body className={`${raleway.variable} ${chakraPetch.variable} font-sans antialiased`}>
         <script
           type="application/ld+json"
           suppressHydrationWarning

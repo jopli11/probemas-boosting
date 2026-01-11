@@ -31,16 +31,24 @@ export function Navbar() {
           </span>
         </div>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-8 md:flex font-raleway">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm text-probemas-muted transition hover:text-probemas-text"
+              className="text-sm font-semibold text-white/70 transition hover:text-yellow"
             >
               {link.label}
             </Link>
           ))}
+          <a
+            href="https://discord.gg/ts7mYuwJ"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center justify-center rounded-xl bg-yellow px-5 py-2.5 text-sm font-bold text-black shadow-soft transition hover:-translate-y-0.5 font-chakra tracking-[-0.56px]"
+          >
+            Get Started
+          </a>
         </nav>
 
         <button

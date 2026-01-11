@@ -3,36 +3,12 @@ import { features } from "@/lib/content";
 import { SectionHeading } from "./SectionHeading";
 
 const featureIcons: Record<string, JSX.Element> = {
-  "Fast Services": (
-    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-probemas-primary/15 text-probemas-primary">
-      <BoltIcon className="h-7 w-7" />
-    </div>
-  ),
-  "Safety Guarantee": (
-    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-probemas-primary/15 text-probemas-primary">
-      <ShieldIcon className="h-7 w-7" />
-    </div>
-  ),
-  "Daily Updates": (
-    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-probemas-primary/15 text-probemas-primary">
-      <ClockIcon className="h-7 w-7" />
-    </div>
-  ),
-  "VPN Encryption": (
-    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-probemas-primary/15 text-probemas-primary">
-      <LockIcon className="h-7 w-7" />
-    </div>
-  ),
-  "Real-Time Screenshots": (
-    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-probemas-primary/15 text-probemas-primary">
-      <MonitorIcon className="h-7 w-7" />
-    </div>
-  ),
-  "24/7 Support": (
-    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-probemas-primary/15 text-probemas-primary">
-      <PhoneIcon className="h-7 w-7" />
-    </div>
-  ),
+  "Fast Services": <BoltIcon className="h-10 w-10" />,
+  "Safety Guarantee": <ShieldIcon className="h-10 w-10" />,
+  "Daily Updates": <ClockIcon className="h-10 w-10" />,
+  "VPN Encryption": <LockIcon className="h-10 w-10" />,
+  "Real-Time Screenshots": <MonitorIcon className="h-10 w-10" />,
+  "24/7 Support": <PhoneIcon className="h-10 w-10" />,
 };
 
 export function Features() {
@@ -42,22 +18,21 @@ export function Features() {
         <SectionHeading
           title="Our Features"
           subtitle="Why Choose Probemas?"
+          align="center"
         />
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="card-surface h-full p-6 transition hover:-translate-y-1 hover:border-probemas-primary/40 hover:shadow-soft"
+              className="flex flex-col items-center text-center group"
             >
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-probemas-primary/10 text-2xl">
+              <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-success/5 border border-success/20 text-success transition-all duration-300 group-hover:bg-success/10 group-hover:scale-110 group-hover:shadow-[0_0_30px_rgba(82,210,117,0.15)]">
                 {featureIcons[feature.title] ?? (
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-probemas-primary/15 text-probemas-primary">
-                    <BoltIcon className="h-7 w-7" />
-                  </div>
+                  <BoltIcon className="h-10 w-10" />
                 )}
               </div>
-              <h3 className="text-lg font-semibold">{feature.title}</h3>
-              <p className="mt-2 text-sm text-probemas-muted">
+              <h3 className="text-xl font-bold font-raleway text-white mb-2">{feature.title}</h3>
+              <p className="text-sm text-white/70 leading-relaxed max-w-[280px]">
                 {feature.description}
               </p>
             </div>
@@ -73,11 +48,7 @@ function BoltIcon({ className = "" }: { className?: string }) {
     <svg
       className={className}
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fill="currentColor"
       aria-hidden="true"
     >
       <path d="M13 2 5 14h6l-1 8 8-12h-6l1-8Z" />
@@ -90,15 +61,10 @@ function ShieldIcon({ className = "" }: { className?: string }) {
     <svg
       className={className}
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fill="currentColor"
       aria-hidden="true"
     >
-      <path d="M12 3 5 6v6c0 4.97 3.1 7.94 7 9 3.9-1.06 7-4.03 7-9V6Z" />
-      <path d="M9 12.5 11 14l4-4" />
+      <path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm0 10.91h-6V6.11L12 3.8l6 2.31v5.8h-6v6.91z" />
     </svg>
   );
 }
@@ -108,15 +74,10 @@ function ClockIcon({ className = "" }: { className?: string }) {
     <svg
       className={className}
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fill="currentColor"
       aria-hidden="true"
     >
-      <circle cx="12" cy="12" r="8" />
-      <path d="M12 8v4l2.5 2.5" />
+      <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
     </svg>
   );
 }
@@ -126,16 +87,10 @@ function LockIcon({ className = "" }: { className?: string }) {
     <svg
       className={className}
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fill="currentColor"
       aria-hidden="true"
     >
-      <rect x="5" y="11" width="14" height="9" rx="2" />
-      <path d="M9 11V8a3 3 0 0 1 6 0v3" />
-      <path d="M12 15v2" />
+      <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z" />
     </svg>
   );
 }
@@ -145,16 +100,10 @@ function MonitorIcon({ className = "" }: { className?: string }) {
     <svg
       className={className}
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fill="currentColor"
       aria-hidden="true"
     >
-      <rect x="4" y="5" width="16" height="11" rx="2" />
-      <path d="M10 20h4" />
-      <path d="M12 16v4" />
+      <path d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7v2H8v2h8v-2h-2v-2h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H3V4h18v12z" />
     </svg>
   );
 }
@@ -164,14 +113,10 @@ function PhoneIcon({ className = "" }: { className?: string }) {
     <svg
       className={className}
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fill="currentColor"
       aria-hidden="true"
     >
-      <path d="M6.6 10.8a12 12 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 8 8 0 0 0 2.5.4 1 1 0 0 1 1 1V19a2 2 0 0 1-2.2 2 18 18 0 0 1-8-3.2 18 18 0 0 1-5.6-5.6A18 18 0 0 1 3 4.2 2 2 0 0 1 5 2h2.6a1 1 0 0 1 1 1 8 8 0 0 0 .4 2.5 1 1 0 0 1-.24 1Z" />
+      <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-2.2 2.2a15.045 15.045 0 01-6.59-6.59l2.2-2.21a.96.96 0 00.25-1.01c-.36-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19c-.54 0-1 .45-1 .99 0 9.39 7.61 17 17 17 .54 0 .99-.45.99-1v-3.57c0-.54-.45-.99-.99-.99z" />
     </svg>
   );
 }

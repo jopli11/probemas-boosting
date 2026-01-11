@@ -24,18 +24,18 @@ export function Testimonials() {
 
         <div className="grid gap-6 md:grid-cols-[280px,1fr]">
           <div className="card-surface p-6 space-y-3">
-            <p className="text-sm text-probemas-muted">Overall Rating</p>
+            <p className="text-sm text-white/70">Overall Rating</p>
             <p className="text-4xl font-bold">4.9</p>
-            <p className="text-sm text-probemas-muted">2,400+ verified reviews</p>
+            <p className="text-sm text-white/70">2,400+ verified reviews</p>
             <div className="mt-4 space-y-2">
               {["Service speed", "Communication", "Safety"].map((label) => (
                 <div key={label} className="space-y-1">
-                  <div className="flex items-center justify-between text-sm text-probemas-muted">
+                  <div className="flex items-center justify-between text-sm text-white/70">
                     <span>{label}</span>
                     <span>5.0</span>
                   </div>
                   <div className="h-2 overflow-hidden rounded-full bg-white/5">
-                    <div className="h-full w-full bg-probemas-primary" />
+                    <div className="h-full w-full bg-yellow" />
                   </div>
                 </div>
               ))}
@@ -47,13 +47,13 @@ export function Testimonials() {
               {visible.map((item) => (
                 <div key={item.author} className="card-surface p-5 space-y-3">
                   <div className="flex items-center justify-between text-sm">
-                    <span className="text-probemas-muted">{item.source}</span>
-                    <span className="rounded-full bg-probemas-primary/20 px-2 py-1 text-xs font-semibold text-probemas-text">
+                    <span className="text-white/70">{item.source}</span>
+                    <span className="rounded-full bg-yellow/20 px-2 py-1 text-xs font-bold text-yellow font-chakra">
                       {item.rating.toFixed(1)}
                     </span>
                   </div>
-                  <p className="text-sm leading-relaxed text-probemas-text">{item.text}</p>
-                  <div className="flex items-center justify-between text-sm text-probemas-muted">
+                  <p className="text-sm leading-relaxed text-white">{item.text}</p>
+                  <div className="flex items-center justify-between text-sm text-white/70">
                     <span>{item.author}</span>
                     <span>{item.tag}</span>
                   </div>
@@ -67,7 +67,7 @@ export function Testimonials() {
                     key={idx}
                     onClick={() => setPage(idx)}
                     className={`h-2.5 w-2.5 rounded-full transition ${
-                      page === idx ? "bg-probemas-primary" : "bg-white/20"
+                      page === idx ? "bg-yellow" : "bg-white/20"
                     }`}
                     aria-label={`Go to testimonials page ${idx + 1}`}
                   />

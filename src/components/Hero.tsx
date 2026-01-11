@@ -8,14 +8,14 @@ export function Hero() {
     >
       <div className="page-container grid gap-10 md:grid-cols-2 md:items-center">
         <div className="space-y-6">
-          <p className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.15em] text-probemas-muted">
+          <p className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.15em] text-white/70">
             Probemas Services
           </p>
           <div className="space-y-4">
-            <h1 className="text-4xl font-bold leading-tight text-probemas-text md:text-5xl">
+            <h1 className="text-h1-mobile font-bold leading-tight text-yellow md:text-title-desktop font-raleway">
               Maximize Your OSRS Experience
             </h1>
-            <p className="text-lg text-probemas-muted">
+            <p className="text-lg text-white">
               Dominate RuneScape today with trusted boosters, rapid delivery, and transparent progress updates.
             </p>
           </div>
@@ -24,7 +24,7 @@ export function Hero() {
               href="https://discord.gg/ts7mYuwJ"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center rounded-xl bg-probemas-primary px-6 py-3 text-base font-semibold text-black shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg"
+              className="inline-flex items-center justify-center rounded-xl bg-yellow px-8 py-4 text-lg font-bold text-black shadow-soft transition hover:-translate-y-0.5 hover:shadow-lg font-chakra tracking-[-0.56px]"
             >
               Get Started
             </a>
@@ -32,7 +32,7 @@ export function Hero() {
               href="https://discord.gg/ts7mYuwJ"
               target="_blank"
               rel="noreferrer"
-              className="text-probemas-muted underline-offset-4 hover:text-probemas-text hover:underline"
+              className="inline-flex items-center justify-center rounded-xl bg-yellow/20 px-8 py-4 text-lg font-bold text-yellow shadow-soft transition hover:-translate-y-0.5 hover:bg-yellow/30 font-chakra tracking-[-0.56px]"
             >
               Explore services
             </a>
@@ -43,13 +43,13 @@ export function Hero() {
                 4.9
               </span>
               <div>
-                <p className="text-sm text-probemas-muted">Reviews.io rating</p>
+                <p className="text-sm text-white/70">Reviews.io rating</p>
                 <p className="font-semibold">2,400+ reviews</p>
               </div>
             </div>
             <div className="h-10 w-px bg-white/10" />
             <div>
-              <p className="text-sm text-probemas-muted">Trusted by OSRS players</p>
+              <p className="text-sm text-white/70">Trusted by OSRS players</p>
               <p className="font-semibold">Global coverage • 24/7 support</p>
             </div>
           </div>

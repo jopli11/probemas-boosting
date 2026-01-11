@@ -26,8 +26,8 @@ export function ServicesTabs() {
                   onClick={() => setActiveId(category.id)}
                   className={`flex flex-1 items-center gap-3 whitespace-nowrap px-4 py-3 text-left text-sm font-medium transition hover:bg-white/5 lg:flex-none ${
                     isActive
-                      ? "bg-probemas-primary text-black lg:rounded-xl"
-                      : "text-probemas-muted"
+                      ? "bg-yellow text-black lg:rounded-xl font-bold"
+                      : "text-white/60"
                   }`}
                 >
                   {category.icon ? (
@@ -49,17 +49,17 @@ export function ServicesTabs() {
 
           <div className="card-surface p-6 space-y-4 min-w-0">
             <div className="flex items-center justify-between gap-3">
-              <h3 className="text-2xl font-semibold">{activeCategory?.label}</h3>
-              <span className="text-xs uppercase tracking-[0.2em] text-probemas-muted">
+              <h3 className="text-h3-mobile font-bold font-raleway md:text-h3-desktop text-white">{activeCategory?.label}</h3>
+              <span className="text-xs uppercase tracking-[0.2em] text-white/50">
                 Services
               </span>
             </div>
-            <p className="text-probemas-muted">{activeCategory?.description}</p>
+            <p className="text-white/80">{activeCategory?.description}</p>
             <div className="flex gap-4 overflow-x-auto pb-3 snap-x snap-mandatory">
               {activeCategory?.gallery.map((img) => (
                 <div
                   key={img}
-                  className="min-w-[72vw] max-w-[320px] flex-1 snap-start rounded-xl border border-white/10 bg-gradient-to-br from-probemas-bgSoft to-probemas-bg p-4 text-center text-sm text-probemas-muted sm:min-w-[220px]"
+                  className="min-w-[72vw] max-w-[320px] flex-1 snap-start rounded-xl border border-white/10 bg-gradient-to-br from-probemas-bgSoft to-probemas-bg p-4 text-center text-sm text-white/70 sm:min-w-[220px]"
                 >
                   <div className="relative mb-3 h-44 w-full overflow-hidden rounded-lg bg-black/20 sm:h-36">
                     <Image
@@ -71,7 +71,7 @@ export function ServicesTabs() {
                       priority
                     />
                   </div>
-                  <p className="text-xs text-probemas-muted/70">Service preview</p>
+                  <p className="text-xs text-white/70/70">Service preview</p>
                 </div>
               ))}
             </div>
